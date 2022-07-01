@@ -75,7 +75,7 @@ Feature: As a user, I should be able to login.
     Then Verify that user can see the Reset Password button
 
 
-  Scenario: Verify that user can see valid placeholders on Username and Password fields
+  Scenario: 6- User can see valid placeholders on Username and Password fields
     When Navigate to login page
     Then Verify that user can see valid placeholders on Username inpurbox
     Then Verify that user can see valid placeholders on Password inputbox
