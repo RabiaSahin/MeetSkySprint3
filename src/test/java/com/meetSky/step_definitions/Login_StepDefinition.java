@@ -43,12 +43,14 @@ public class Login_StepDefinition {
 
     @Then("Verify that user can not login with blank username and see the alert message")
     public void verifyThatUserCanNotLoginWithBlankUsernameAndSeeTheAlertMessage() {
+        BrowserUtils.sleep(2);
         String message = Driver.getDriver().findElement(By.name("user")).getAttribute("validationMessage");
         Assert.assertTrue(message.equalsIgnoreCase("Please fill in this field."));
     }
 
     @Then("Verify that user can not login with blank password and see the alert message")
     public void verifyThatUserCanNotLoginWithBlankPasswordAndSeeTheAlertMessage() {
+        BrowserUtils.sleep(2);
         String message = Driver.getDriver().findElement(By.name("password")).getAttribute("validationMessage");
         Assert.assertTrue(message.equalsIgnoreCase("Please fill in this field."));
     }
