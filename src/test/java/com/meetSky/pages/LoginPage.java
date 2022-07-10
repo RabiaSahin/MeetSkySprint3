@@ -16,7 +16,7 @@ public class LoginPage {
     public WebElement passwordInput;
 
     @FindBy (xpath = "//input[@id='submit-form']")
-    public WebElement submitFormButton;
+    public WebElement LoginBtn;
 
 
     @FindBy (xpath = "//div[@class='logo logo-icon']")

@@ -28,13 +28,12 @@ public class Login_StepDefinition {
     }
     @When("Click on the login button on the login page")
     public void click_on_the_login_button_on_the_login_page() {
-        loginPage.submitFormButton.click();
+        loginPage.LoginBtn.click();
     }
 
     @Then("Verify that user can login files page successfully")
     public void verify_that_user_can_login_files_page_successfully() {
         Assert.assertTrue(loginPage.meetSkyLogo.isDisplayed());
-
     }
 
     @Then("Verify that user can not login and see the notice message")
